@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .text-red{
+            color: red;
+        }
+    </style>
+    <div >
+    <p id="alpha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima saepe, magnam recusandae similique at ea obcaecati, officia, architecto assumenda quae! Quo iste nihil laboriosam aliquid quas maiores id magni?</p>
+    <button class="beta">click me!</button>
+    </div>
+    <script>
+      const para=document.getElementById("alpha");
+      const toggleBtn=document.querySelector(".beta");
+      let paraIsVisible=true;
+      toggleBtn.addEventListener("click",function(){
+        //alert("ok");
+        if(paraIsVisible){
+            para.style.display="none";
+            paraIsVisible=false;
+        }
+        else{
+            para.style.display="block";
+            paraIsVisible=true;
+        }
+      }
+      );
+    </script>
+</body>
+</html>

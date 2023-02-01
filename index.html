@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .text-red{
+            color: red;
+        }
+    </style>
+    <div >
+        
+    </div>
+    <script>
+        const name="ui/ux training - 5"    //string   option a
+        const day=5;   //number
+        const version=3.0; //float
+        const isclear=true;
+
+        const courseAsArr=["ui/ux training",5,3.0,true];   //option b
+        console.log(courseAsArr[0])
+        console.log(courseAsArr[2])
+        console.log(courseAsArr[10])    //throws undefined
+        const courseAsObject={     //option c
+            "name":"ui/ux training",
+            "day":5,
+            "version":3.0,
+            "isclear":true
+        }
+        console.log(courseAsObject.name);  //both are valid
+        console.log(courseAsObject["name"])
+        const course=[
+            {"name":"ui/ux training",
+            "day":5,
+            "version":3.0,
+            "isclear":true},
+            {
+                "name":"frontend training",
+            "day":5,
+            "version":3.0,
+            "isclear":true
+            }
+        ]
+        console.log(courses[1].name)
+    </script>
+</body>
+</html>
